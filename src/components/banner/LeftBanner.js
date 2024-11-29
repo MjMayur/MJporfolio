@@ -1,6 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFileDownload } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const LeftBanner = () => {
@@ -67,6 +67,15 @@ const LeftBanner = () => {
                 <FaLinkedinIn />
               </span>
             </a>
+            {/* <a
+              href="https://drive.google.com/file/d/1qLeGDnSnrEqOn_tQ8d5v9e6iSv6XpjAR/view?usp=drive_link"
+              download="My_Resume_Mayur_Jadhav"
+              target="_blank"
+            >
+              <span className="bannerIcon bg-cardColor">
+                <FaFileDownload />
+              </span>
+            </a> */}
           </div>
         </div>
       </div>

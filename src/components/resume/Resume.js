@@ -16,7 +16,7 @@ const Resume = () => {
         <Title des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 text-cardColor">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2  xs:grid-cols-2 sm:grid-cols-2 xl:grid-cols-2 text-cardColor">
           <li
             onClick={() =>
               setEducationData(true) &
@@ -28,7 +28,7 @@ const Resume = () => {
               educationData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
-            } resumeLi bg-cardColor text-black`}
+            } resumeLi bg-cardColor text-black sm:text-sm md:text-md lg:text-xl`}
           >
             Education
           </li>
@@ -41,7 +41,7 @@ const Resume = () => {
             }
             className={`${
               skillData ? "border-designColor rounded-lg" : "border-transparent"
-            } resumeLi bg-cardColor text-black`}
+            } resumeLi bg-cardColor text-black sm:text-sm md:text-md lg:text-xl`}
           >
             Professional Skills
           </li>

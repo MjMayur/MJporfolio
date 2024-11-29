@@ -18,14 +18,13 @@ const Education = () => {
           <ResumeCard
             title="Masters in Computer Application"
             subTitle="Savitribai Phule Pune University (2022 - 2024)"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            des="A Masters (MCA) equips graduates with advanced technical skills in programming, software development, web Development, and data management, while also fostering problem-solving and analytical thinking."
           />
 
           <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (2017 - 2020)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            title="Bachelors in Computer Application"
+            subTitle="Panchvati college of management and computer science (2017-2020)"
+            des="A Bachelor of Computer Applications (BCA) provides a strong foundation in computer science and IT, equipping students with essential skills in programming, database management, web development, and networking."
           />
         </div>
       </div>
