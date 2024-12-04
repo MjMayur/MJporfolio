@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import LeftBanner from "./LeftBanner";
-import RightBanner from "./RightBanner";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState(false);

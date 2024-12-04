@@ -1,6 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaLinkedinIn, FaGithub, FaFileDownload } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const LeftBanner = () => {
@@ -12,13 +12,13 @@ const LeftBanner = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+    <div className="w-full flex flex-col gap-20">
       <div className="flex flex-col gap-5">
         <h1 className="text-6xl font-bold text-textColor">
           Hi, I'm{" "}
           <span className="text-designColor capitalize">Mayur Jadhav.</span>
         </h1>
-        <h2 className="text-4xl font-bold text-textColor">
+        <h2 className="text-4xl font-bold text-textColor lgl:w-1/2 ">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
@@ -26,7 +26,7 @@ const LeftBanner = () => {
             cursorColor="#ff014f"
           />
         </h2>
-        <p className="text-textColor font-bodyFont leading-6 tracking-wide">
+        <p className="text-textColor font-bodyFont leading-6 tracking-wide lgl:w-1/2 ">
           As a Frontend Developer with one and a half years of experience, I've
           mastered screen designing, creating user-friendly and visually
           appealing interfaces. I'm also building my backend skills and
