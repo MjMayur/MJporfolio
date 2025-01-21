@@ -56,9 +56,9 @@ const ContactLeft = () => {
             </span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1qLeGDnSnrEqOn_tQ8d5v9e6iSv6XpjAR/view?usp=drive_link"
-            download="My_Resume_Mayur_Jadhav"
+            href="https://drive.google.com/file/d/1G-65zEpG7FRixbmKPBZLn2cJAZ8RUqn-/view"
             title="Download Resume"
+            target="_blank"
           >
             <span className="bannerIcon bg-cardColor">
               <FaDownload />
