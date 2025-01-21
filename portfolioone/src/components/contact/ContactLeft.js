@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa";
 import { bannerImg } from "../../assets/index";
 import { MdEmail } from "react-icons/md";
 
@@ -13,7 +13,7 @@ const ContactLeft = () => {
       />
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-black">Mayur Jadhav</h3>
-        <p className="text-lg font-normal text-gray">MERN Stack Developer</p>
+        <p className="text-lg font-normal text-gray">Full-Stack Developer</p>
         {/* <p className="text-base text-gray-400 tracking-wide">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
           ipsam autem cumque, accusantium dicta odio.
@@ -55,15 +55,15 @@ const ContactLeft = () => {
               <FaLinkedinIn />
             </span>
           </a>
-          {/* <a
-              href="https://drive.google.com/file/d/1qLeGDnSnrEqOn_tQ8d5v9e6iSv6XpjAR/view?usp=drive_link"
-              download="My_Resume_Mayur_Jadhav"
-              target="_blank"
-            >
-              <span className="bannerIcon bg-cardColor">
-                <FaFileDownload />
-              </span>
-            </a> */}
+          <a
+            href="https://drive.google.com/file/d/1qLeGDnSnrEqOn_tQ8d5v9e6iSv6XpjAR/view?usp=drive_link"
+            download="My_Resume_Mayur_Jadhav"
+            title="Download Resume"
+          >
+            <span className="bannerIcon bg-cardColor">
+              <FaDownload />
+            </span>
+          </a>
         </div>
       </div>
     </div>

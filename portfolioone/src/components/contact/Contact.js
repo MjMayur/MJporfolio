@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [errMsg, setErrMsg] = useState("");
@@ -13,6 +14,7 @@ const Contact = () => {
   });
   const [isVisible, setIsVisible] = useState(false); // Track visibility
   const sectionRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   // ========== Email Validation start here ==============
   const emailValidation = () => {
@@ -23,19 +25,21 @@ const Contact = () => {
 
   //============Handle change=============
   const handleChange = (e) => {
-    setErrMsg("");
+    setSuccessMsg("");
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   //========= Handle Focus Event for Inputs ============
   const handleFocus = (e) => {
-    setErrMsg("");
+    setSuccessMsg("");
   };
 
   // ========== Email Validation end here ================
 
   const handleSend = (e) => {
+    setSuccessMsg("");
     e.preventDefault();
+
     // Validation logic
     if (!formData.name.trim()) return setErrMsg("Name is required!");
     if (!formData.phone.trim()) {
@@ -50,21 +54,55 @@ const Contact = () => {
     }
     if (!formData.message.trim()) return setErrMsg("Message is required!");
 
-    // Success message
-    if (errMsg === "") {
-      setSuccessMsg(
-        `Thank you ${formData.name}, Your message has been sent successfully!`
+    // Clear error message if all validations pass
+
+    setIsLoading(true); // Set loader to true
+
+    // EmailJS configuration
+    const serviceID = "service_kz2c12h";
+    const templateID = "template_rouooi9";
+    const publicKey = "Hw9TFdnytSZNL6kkV";
+
+    // EmailJS send function
+    emailjs
+      .send(
+        serviceID,
+        templateID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        publicKey
+      )
+      .then(
+        (response) => {
+          if (response.status === 200) {
+            setSuccessMsg(
+              `Thank you ${formData.name}, your message has been sent successfully!`
+            );
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              message: "",
+            });
+          } else {
+            setErrMsg("Failed to send your message. Please try again later.");
+          }
+          setIsLoading(false); // Stop loader
+        },
+        (error) => {
+          setErrMsg("Failed to send your message. Please try again later.");
+          setIsLoading(false); // Stop loader
+        }
       );
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    } else {
-      setSuccessMsg("");
-    }
   };
+
+  useEffect(() => {
+    setTimeout(() => setSuccessMsg(""), 3000);
+  }, [successMsg]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -178,9 +216,14 @@ const Contact = () => {
                 <div className="w-full">
                   <button
                     onClick={handleSend}
-                    className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
+                    disabled={isLoading}
+                    className={`w-full h-12 ${
+                      isLoading ? "bg-gray-500" : "bg-[#141518]"
+                    } rounded-lg text-base text-gray-400 tracking-wider uppercase ${
+                      isLoading ? "cursor-not-allowed" : "hover:text-white"
+                    } duration-300 hover:border-[1px] hover:border-designColor border-transparent`}
                   >
-                    Send Message
+                    {isLoading ? "Sending..." : "Send Message"}
                   </button>
                 </div>
               </form>
