@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose, MdEmail } from "react-icons/md";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa";
 import { navLinksdata } from "../../constants";
 
 const Navbar = () => {
@@ -90,6 +90,15 @@ const Navbar = () => {
                 >
                   <span className="bannerIconSmall  text-white">
                     <FaLinkedinIn />
+                  </span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mayur-jadhav-03b3821b4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="bannerIconSmall text-white">
+                    <FaDownload />
                   </span>
                 </a>
               </div>

@@ -1,6 +1,11 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaFileDownload,
+  FaDownload,
+} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const LeftBanner = () => {
@@ -43,6 +48,7 @@ const LeftBanner = () => {
               href="https://github.com/MjMayur"
               target="_blank"
               rel="noopener noreferrer"
+              title="Github"
             >
               <span className="bannerIcon bg-cardColor">
                 <FaGithub />
@@ -52,6 +58,7 @@ const LeftBanner = () => {
               href="mailto:mjmayur909@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="Email"
             >
               <span className="bannerIcon bg-cardColor">
                 <MdEmail />
@@ -62,20 +69,21 @@ const LeftBanner = () => {
               href="https://www.linkedin.com/in/mayur-jadhav-03b3821b4/"
               target="_blank"
               rel="noopener noreferrer"
+              title="LinkedIn"
             >
               <span className="bannerIcon  bg-cardColor">
                 <FaLinkedinIn />
               </span>
             </a>
-            {/* <a
+            <a
               href="https://drive.google.com/file/d/1qLeGDnSnrEqOn_tQ8d5v9e6iSv6XpjAR/view?usp=drive_link"
               download="My_Resume_Mayur_Jadhav"
-              target="_blank"
+              title="Download Resume"
             >
               <span className="bannerIcon bg-cardColor">
-                <FaFileDownload />
+                <FaDownload />
               </span>
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
