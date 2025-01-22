@@ -76,7 +76,7 @@ const LeftBanner = () => {
               </span>
             </a>
             <a
-              href="https://drive.google.com/file/d/1G-65zEpG7FRixbmKPBZLn2cJAZ8RUqn-/view"
+              href="https://drive.google.com/file/d/1Vcm_oFHvC3g1OI5hZ2tmf-MiHBvb-RIe/view?usp=drive_link"
               download="My_Resume_Mayur_Jadhav"
               title="Download Resume"
               target="_blank"
