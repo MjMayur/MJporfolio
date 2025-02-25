@@ -106,7 +106,7 @@ const Navbar = () => {
             <span
               onClick={() => setShowMenu(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
-            >
+            > 
               <MdClose />
             </span>
           </div>
