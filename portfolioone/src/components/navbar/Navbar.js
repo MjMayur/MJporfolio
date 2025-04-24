@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full h-16 sticky top-0 z-50 bg-bodyColor flex justify-between items-center font-titleFont border-b-[1px] ">
-      <div className="font-bold">Mayur Jadhav</div>
+      <div className="font-bold">Mayur Jadhav Jadhav</div>
       <div>
         <ul className="hidden mdl:inline-flex items-center lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
