@@ -5,13 +5,13 @@ import { MdEmail } from "react-icons/md";
 
 const ContactLeft = () => {
   return (
-    <div className="w-full lgl:w-[35%] h-full bg-white from-[#1e2024] to-[#23272b] p-4 lgl:p-8 rounded-lg  flex flex-col gap-8 justify-center">
+    <div className="w-full lgl:w-[35%] h-full bg-white from-[#1e2024] to-[#23272b] p-2 lgl:p-8 rounded-lg  flex flex-col  justify-center">
       <img
-        className="w-full h-64 object-cover rounded-lg mb-2 bg-gray-200 pt-2"
+        className="w-full h-68 object-cover rounded-lg mb-2 bg-gray-200 "
         src={bannerImg}
         alt="contactImg"
       />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col ">
         <h3 className="text-3xl font-bold text-black">Mayur Jadhav</h3>
         <p className="text-lg font-normal text-gray">Full-Stack Developer</p>
         {/* <p className="text-base text-gray-400 tracking-wide">
@@ -25,7 +25,7 @@ const ContactLeft = () => {
           Email: <span className="text-lightText">mjmayur909@gmail.com</span>
         </p>
       </div>
-      <div className="flex flex-col gap-4 mb-5 mt-9">
+      <div className="flex flex-col gap-4 mb-5 ">
         <div className="flex gap-4 mt-10">
           <a
             href="https://github.com/MjMayur"

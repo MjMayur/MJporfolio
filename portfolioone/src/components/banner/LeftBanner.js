@@ -32,10 +32,12 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-textColor font-bodyFont leading-6 tracking-wide lgl:w-1/2 ">
-          As a Frontend Developer with one and a half years of experience, I've
-          mastered screen designing, creating user-friendly and visually
-          appealing interfaces. I'm also building my backend skills and
-          improving them over time.
+          As a Full-Stack Developer with nearly 3 years of experience, I
+          specialize in building dynamic, user-centric interfaces with React
+          while developing robust backend systems using Golang, Node.js, and
+          PostgreSQL. My journey began in frontend development, and I’ve since
+          evolved into a versatile full-stack engineer, consistently delivering
+          scalable, high-performance web applications.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
