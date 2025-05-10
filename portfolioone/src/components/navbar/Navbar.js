@@ -93,7 +93,7 @@ const Navbar = () => {
                   </span>
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/13hITDtMVetZQrx0VtD6-TEG3W2Td972B/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1LMYAJSXKHnkovKhoKDBGn-vXJO4heCM1/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

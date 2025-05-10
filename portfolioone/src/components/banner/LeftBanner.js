@@ -10,7 +10,15 @@ import { MdEmail } from "react-icons/md";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "Frontend Developer.", "UI Designer."],
+    words: [
+      "Creative Problem Solver.",
+      "Full-Stack Developer.",
+      "Web App Developer",
+      "Android and IOS Developer",
+      "UI/UX Enthusiast.",
+      "React & Golang Specialist.",
+      "Passionate Tech Builder.",
+    ],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -78,7 +86,7 @@ const LeftBanner = () => {
               </span>
             </a>
             <a
-              href="https://drive.google.com/file/d/13hITDtMVetZQrx0VtD6-TEG3W2Td972B/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1LMYAJSXKHnkovKhoKDBGn-vXJO4heCM1/view?usp=drive_link"
               download="My_Resume_Mayur_Jadhav"
               title="Download Resume"
               target="_blank"
